@@ -1,0 +1,56 @@
+
+.container {
+    display: flex;
+    gap: 100px;
+}
+
+.textContainer {
+    flex: 1;
+    display:  flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.subHeading {
+    color: var(--btn);
+}
+
+.mainHeading {
+    font-size: 54px;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxHeading {
+    color: var(--btn);
+}
+
+.imageContainer {
+    flex: 1;
+    position: relative;
+}
+ 
+.image {
+    object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .boxes {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
